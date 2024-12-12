@@ -243,7 +243,8 @@ int generate_random_duration() {
 
 void get_lyrics(const char *title, char *response) {
     int found = 0;
-    for (int i = 0; i < playlist.count; i++) {
+    int i;
+    for (i = 0; i < playlist.count; i++) {
         if (strcmp(playlist.songs[i].title, title) == 0) {
             found = 1;
             break;
